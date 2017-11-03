@@ -17,7 +17,7 @@ Components and Steps to run
 
 1. Extract the zip file 'BrainSegQuickNAT.zip'.
 
-2. Download MatConvNet (http://www.vlfeat.org/matconvnet/). Paste the 'DagNN_Layers' in 'MatConvNet/matlab/dagnn/' and 'SimpleNN_Layers' in 'MatConvNet/matlab'
+2. Download MatConvNet (http://www.vlfeat.org/matconvnet/). Paste the extra layers 'DagNN_Layers/..' to 'MatConvNet/matlab/+dagnn/' and 'SimpleNN_Layers/..' to 'MatConvNet/matlab/'
 
 3. Compile the extracted MatConvNet (Refer: http://www.vlfeat.org/matconvnet/install/)
 
