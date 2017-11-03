@@ -17,17 +17,15 @@ Components and Steps to run
 
 1. Extract the zip file 'BrainSegQuickNAT.zip'.
 
-2. MatConvNet version beta 24 in the folder (with extra layers and files required for QuickNAT)
+2. Download MatConvNet (http://www.vlfeat.org/matconvnet/). Paste the 'DagNN_Layers' in 'MatConvNet/matlab/dagnn/' and 'SimpleNN_Layers' in 'MatConvNet/matlab'
 
-3. Open Matlab and add all the contents of the un-zipped folder to the path.
-
-4. Compile the extracted MatConvNet (Refer: http://www.vlfeat.org/matconvnet/install/)
+3. Compile the extracted MatConvNet (Refer: http://www.vlfeat.org/matconvnet/install/)
 
 5. Go To folder '/RunFile/' and open the file RunFile.m
 
-6. Enter the path and name of the MRI volume. (Make sure the Data has iso-tropic resolution of 256 x 256 x 256, if not use freesurfer to do it using the command: mri-convert --conform InputVol OutputVol. It takes less than a second to do this.)
+6. Enter the path and name of the MRI volume. (Make sure the Data has iso-tropic resolution of 256 x 256 x 256, if not use freesurfer to do it using the command: mri-convert --conform InputVol OutputVol. It takes less than a second to do this.). The code uses the 'MRIread' routine from FreeSurfer for read/write operation. You may use your own customized version. 
 
-7. Run the Code and Get Segmentations saved in the same folder within 20secs!!!
+7. Run the Code and Get Segmentations saved in the same folder within 20secs!!! (Please note: 20sec is when deployed on Titan X Pascal 12GB GPU in Linux Ubuntu 16.04 OS. In the routine SegmentVol, the 'NumFrames' is passed as 70 to utilize this memory effectively. If you are using other GPU, please modify this to accomodate. 'NumFrames' of 10 works on a 4GB GTX 960M Laptop with segmentation time around 1 minute.)
 
 List of Classes with IDs
 
