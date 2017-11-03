@@ -1,6 +1,6 @@
 # QuickNATv2
 
-Tool: QuickNAT: Deep Learning for Quick Segmentation of Neuroanatomy in MRI
+Tool: QuickNAT: Segmenting MRI Neuroanatomy in 20 seconds
 
 Authors: Abhijit Guha Roy, Sailesh Conjeti, Nassir Navab and Christian Wachinger
 
