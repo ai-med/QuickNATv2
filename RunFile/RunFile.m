@@ -12,7 +12,7 @@ FileName = 'SampleData.mgz';
 DataVol = MRIread([DataPath,FileName]);
 Data = DataVol.vol;
 % Run QuickNAT
-[Predictions, SegTime] = SegmentVol(Data);
+[Predictions, SegTime] = SegmentVol(Data,70); % Change the 70 based on your GPU RAM size
 disp(['----Processing Over. Segmentation Time is ',num2str(SegTime)]);
 % Copy the header of original File to Pred File for consistency
 PredVol = DataVol;
