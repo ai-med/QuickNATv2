@@ -4,7 +4,7 @@ Tool: QuickNAT: Segmenting MRI Neuroanatomy in 20 seconds
 
 Authors: Abhijit Guha Roy, Sailesh Conjeti, Nassir Navab and Christian Wachinger
 
-Prerequisits:
+Prerequisite:
 
 1. A nvidia GPU with cuda compatibility
 2. Installed Cuda Toolkit 8
@@ -15,11 +15,11 @@ Prerequisits:
 Components and Steps to run
 ------------------------------------
 
-1. Extract the zip file 'BrainSegQuickNAT.zip'.
+1. sudo git-clone https://github.com/abhi4ssj/QuickNATv2/
 
 2. Download MatConvNet (http://www.vlfeat.org/matconvnet/). Paste the extra layers 'DagNN_Layers/..' to 'MatConvNet/matlab/+dagnn/' and 'SimpleNN_Layers/..' to 'MatConvNet/matlab/'
 
-3. Compile the extracted MatConvNet (Refer: http://www.vlfeat.org/matconvnet/install/)
+3. Compile the extracted MatConvNet with (enablegpu = true) (Tested on Beta 24) (Refer: http://www.vlfeat.org/matconvnet/install/)
 
 5. Go To folder '/RunFile/' and open the file RunFile.m
 
