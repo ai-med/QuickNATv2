@@ -27,7 +27,7 @@ PredictionsFinal_Sag = [];
 tic
 % 70 slices in one pass restricted by GPU space
 for j= 1:NumFrames:256
-    if(j==211)
+    if(j>(256-NumFrames+1))
         k=256;
     else
         k=j+NumFrames-1;
