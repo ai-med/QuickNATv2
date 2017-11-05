@@ -1,3 +1,5 @@
+% To Run the File your current directory has to be the RunFile Directory as all the paths are defined relative to it
+
 clc
 clear
 close all
