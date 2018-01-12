@@ -30,30 +30,57 @@ Components and Steps to run
 List of Classes with IDs
 
 0 - 'Background'
+
 1 - 'WM left'
+
 2 - 'GM left'
+
 3 - 'WM right'
+
 4 - 'GM right' 
+
 5 - 'Ventricle left'
+
 6 - 'Cereb WM left'
+
 7 - 'Cereb GM left'
+
 8 - 'Thalamus left'
+
 9 - 'Caudate left'
+
 10 -'Putamen left'
+
 11 -'Pallidum left'
+
 12 -'3rd ventricle'
+
 13 -'4th ventricle'
+
 14 -'Brainstem'
+
 15 -'Hippo left'
+
 16 -'Amygdala left'
+
 17 -'VentralDC left'
+
 18 -'Ventricle right'
+
 19 -'Cereb WM right'
+
 20 -'Cereb GM right'
+
 21 -'Thalamus right'
+
 22 -'Caudate right'
+
 23 -'Putamen right'
+
 24 -'Pallidum right'
+
 25 -'Hippo right'
+
 26 -'Amygdala right'
+
 27 -'VentralDC right
