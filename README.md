@@ -4,6 +4,10 @@ Tool: QuickNAT: Segmenting MRI Neuroanatomy in 20 seconds
 
 Authors: Abhijit Guha Roy, Sailesh Conjeti, Nassir Navab and Christian Wachinger
 
+The code for training, as well as the Trained Models are provided here.
+
+Deployment of existing off-the-shelf Model to segment any MRI scans is just by running RunFile.
+
 Prerequisite:
 
 1. A nvidia GPU with cuda compatibility
@@ -20,7 +24,9 @@ Guha Roy, A., Conjeti, S., Navab, N., and Wachinger, C. 2018. QuickNAT: Segmenti
  Enjoy!!! :)
 
 ------------------------------------
-Components and Steps to run
+# Components and Steps to run
+
+Deployment of pre-trained Model on Un-seen Data
 ------------------------------------
 
 1. sudo git-clone https://github.com/abhi4ssj/QuickNATv2/
@@ -31,7 +37,7 @@ Components and Steps to run
 
 5. Go To folder '/RunFile/' and open the file RunFile.m
 
-6. Enter the path and name of the MRI volume. (Make sure the Data has iso-tropic resolution of 256 x 256 x 256, if not use freesurfer to do it using the command: mri-convert --conform InputVol OutputVol. It takes less than a second to do this.). The code uses the 'MRIread' routine from FreeSurfer for read/write operation. You may use your own customized version. 
+6. Enter the path and name of the MRI volume. (Make sure the Data has iso-tropic resolution of 256 x 256 x 256, if not use freesurfer to do it using the command: 'mri-convert --conform InputVol OutputVol'. It takes less than a second to do this.). The code uses the 'MRIread' routine from FreeSurfer for read/write operation. You may use your own customized version. 
 
 7. Run the Code and Get Segmentations saved in the same folder within 20secs!!! (Please note: 20sec is when deployed on Titan X Pascal 12GB GPU in Linux Ubuntu 16.04 OS. In the routine SegmentVol, the 'NumFrames' is passed as 70 to utilize this memory effectively. If you are using other GPU, please modify this to accomodate. 'NumFrames' of 10 works on a 4GB GTX 960M Laptop with segmentation time around 1 minute.)
 
