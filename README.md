@@ -1,6 +1,8 @@
+--------------------------------------------------
 # QuickNATv2
 
 Tool: QuickNAT: Segmenting MRI Neuroanatomy in 20 seconds
+-----------------------------------------------------------
 
 Authors: Abhijit Guha Roy, Sailesh Conjeti, Nassir Navab and Christian Wachinger
 
