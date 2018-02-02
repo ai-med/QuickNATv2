@@ -23,6 +23,8 @@ Guha Roy, A., Conjeti, S., Navab, N., and Wachinger, C. 2018. QuickNAT: Segmenti
  
  Link to paper: https://arxiv.org/abs/1801.04161 
  
+ Currently it is MATLAB based. We are currently working on a Tensorflow Implementation and will be releasing it soon.
+ 
  Enjoy!!! :)
 
 ------------------------------------
@@ -31,21 +33,23 @@ Guha Roy, A., Conjeti, S., Navab, N., and Wachinger, C. 2018. QuickNAT: Segmenti
 Deployment of pre-trained Model on Un-seen Data
 ------------------------------------
 
-1. sudo git-clone https://github.com/abhi4ssj/QuickNATv2/
+1. sudo git-clone https://github.com/abhi4ssj/QuickNATv2/ (Download the repository)
 
-2. Download MatConvNet (http://www.vlfeat.org/matconvnet/). Paste the extra layers 
+2. Download MatConvNet (http://www.vlfeat.org/matconvnet/). Paste the extra layers from this repository to downloaded MatConvNet 
 
-'DagNN_Layers/..' ---> 'MatConvNet/matlab/+dagnn/' and
+'/MatConvNetLayers/DagNN_Layers/..' ---> 'MatConvNet/matlab/+dagnn/' and
 
-'SimpleNN_Layers/..' ---> 'MatConvNet/matlab/'
+'/MatConvNetLayers/SimpleNN_Layers/..' ---> 'MatConvNet/matlab/'
 
-3. Compile the extracted MatConvNet with (enablegpu = true) and Unzip the CuDNN and provide the path while compiling. (Tested on Beta 24) (Refer: http://www.vlfeat.org/matconvnet/install/).
+3. Compile the extracted MatConvNet (vlnncompile.m) with (enablegpu = true, enablecudnn = true) and providing the path of downloaded CuDNN. (Tested on Beta 24) (Refer: http://www.vlfeat.org/matconvnet/install/).
 
-5. Go To folder '/RunFile/' and open the file RunFile.m
+5. Go To folder '/RunFile/' of this repository and open the file RunFile.m
 
 6. Enter the path and name of the MRI volume. (Make sure the Data has iso-tropic resolution of 256 x 256 x 256, use freesurfer to do it using the command: 'mri-convert --conform InputVol OutputVol'. It takes less than a second to do this.). The code uses the 'MRIread' routine from FreeSurfer for read/write operation. You may use your own customized version. 
 
 7. Run the Code and Get Segmentations saved in the same folder within 20secs!!! (Please note: 20sec is when deployed on Titan X Pascal 12GB GPU in Linux Ubuntu 16.04 OS. In the routine SegmentVol, the 'NumFrames' is passed as 70 to utilize this memory effectively. If you are using other GPU, please modify this to accomodate. 'NumFrames' of 10 works on a 4GB GTX 960M Laptop with segmentation time around 1 minute.)
+
+8. Volume Estimation: Just count the number of voxels sum(Segmented_Output(:) == i), provides the volume of class ID 'i' in mm3. Refer the IDs below to find corresponding structure.
 
 List of Classes with IDs
 
