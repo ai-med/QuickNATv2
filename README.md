@@ -17,6 +17,8 @@ Prerequisite:
 3. CuDNN v5.1
 4. Installed Matlab R2015a or later
 
+Let us know if you face any problems running the code by posting in Issues.
+
 If you use this code please cite:
 
 Guha Roy, A., Conjeti, S., Navab, N., and Wachinger, C. 2018. QuickNAT: Segmenting MRI Neuroanatomy in 20 seconds. arXiv preprint arXiv:1801.04161.
