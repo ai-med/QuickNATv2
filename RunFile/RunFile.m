@@ -6,6 +6,7 @@ close all
 %% Load the Data
 % Enter the path to your data
 DataPath = '../SampleData/';
+addpath('../QuickNAT_Networks');
 % FileName
 FileName = 'SampleData.mgz'; % This is a sample Data from OASIS Dataset not used in training the model
 % Use your Loader to load MRI of isotropic resolution (I use MRIread from FreeSurfer)
