@@ -25,9 +25,14 @@ Guha Roy, A., Conjeti, S., Navab, N., and Wachinger, C. 2018. QuickNAT: Segmenti
  
  Link to paper: https://arxiv.org/abs/1801.04161 
  
- Currently it is MATLAB based. We are currently working on a Tensorflow Implementation and will be releasing it soon.
+ Currently it is MATLAB based. We are currently working on a PyTorch Implementation and will be releasing it soon with Models.
  
  Enjoy!!! :)
+ 
+--------
+Third Party Implementations
+--------
+Tensorflow Implementation: https://github.com/IshmeetKaur/QuickNAT_tensorflow
 
 ------------------------------------
 # Components and Steps to run
