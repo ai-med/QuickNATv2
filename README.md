@@ -72,9 +72,9 @@ List of Classes with IDs
 
 5 - 'Ventricle left'
 
-6 - 'Cereb WM left'
+6 - 'Cerebellar WM left'
 
-7 - 'Cereb GM left'
+7 - 'Cerebellar GM left'
 
 8 - 'Thalamus left'
 
@@ -98,9 +98,9 @@ List of Classes with IDs
 
 18 -'Ventricle right'
 
-19 -'Cereb WM right'
+19 -'Cerebellar WM right'
 
-20 -'Cereb GM right'
+20 -'Cerebellar GM right'
 
 21 -'Thalamus right'
 
