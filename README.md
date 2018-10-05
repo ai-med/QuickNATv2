@@ -34,6 +34,8 @@ Third Party Implementations
 --------
 Tensorflow Implementation: https://github.com/IshmeetKaur/QuickNAT_tensorflow
 
+PyTorch Implementation: https://github.com/abhi4ssj/quickNAT_pytorch
+
 ------------------------------------
 # Components and Steps to run
 
