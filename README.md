@@ -12,7 +12,7 @@ Deployment of existing off-the-shelf Model to segment any MRI scans is just by r
 
 Prerequisite:
 
-1. A nvidia GPU with cuda compatibility
+1. An nvidia GPU with cuda compatibility
 2. Installed Cuda Toolkit 8
 3. CuDNN v5.1
 4. Installed Matlab R2015a or later
